@@ -3,7 +3,7 @@ class HitCounter:
 
     def __init__(self):
         """
-        Initialized data structure 
+        Initialized data structure of counter
         """
         self.record = []
         self.length = 0
@@ -50,7 +50,6 @@ class HitCounter:
 
         
         
-# Your HitCounter object will be instantiated and called as such:
-# obj = HitCounter()
-# obj.hit(timestamp)
-# param_2 = obj.getHits(timestamp)
+obj = HitCounter()
+obj.hit(timestamp)
+param_2 = obj.getHits(timestamp)
