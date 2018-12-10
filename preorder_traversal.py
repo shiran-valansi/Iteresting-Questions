@@ -23,3 +23,28 @@ class Solution:
             self.helper(root.left,preorder)
         if root.right:
             self.helper(root.right, preorder)
+
+##########################################################################
+###################        ITERATIVE SOLUTION           ##################
+
+# class Solution:
+#     def preorderTraversal(self, root):
+#         """
+#         :type root: TreeNode
+#         :rtype: List[int]
+#         """
+#         preorder = []
+#         stack = []
+        
+#         if not root:
+#             return preorder
+#         stack.append(root)
+#         while stack:
+#             curr = stack.pop()
+#             preorder.append(curr.val)
+#             if curr.right:
+#                 stack.append(curr.right)
+#             if curr.left:
+#                 stack.append(curr.left)
+
+#         return preorder
